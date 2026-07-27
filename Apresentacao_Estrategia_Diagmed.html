@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Plano de Crescimento e Otimização Google Ads - DIAGMED</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/white.min.css" id="theme">
+
+        <!-- Google Fonts: Outfit para um visual sofisticado e minimalista -->
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+		<!-- Estilos Customizados para um visual Minimalista, Sofisticado e Responsivo -->
+		<style>
+            :root {
+                /* Cores extraídas da logo DIAGMED */
+                --brand-navy: #092e6e;
+                --brand-cyan: #0681a8;
+                
+                --text-main: #2d3436;
+                --text-light: #636e72;
+                --bg-main: #ffffff;
+                --bg-alt: #fbfcfd;
+                --border-color: #f1f2f6;
+            }
+            
+            body, .reveal {
+                font-family: 'Outfit', sans-serif;
+                color: var(--text-main);
+                background-color: var(--bg-main);
+            }
+            .reveal .slide-background {
+                background-color: var(--bg-main);
+            }
+            
+            /* Tipografia Minimalista */
+            .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+                font-family: 'Outfit', sans-serif;
+                color: var(--brand-navy);
+                text-transform: none;
+                letter-spacing: -0.5px;
+                margin-bottom: 20px;
+            }
+            .reveal h1 { font-size: 2.2em; font-weight: 600; line-height: 1.1; }
+            .reveal h2 { font-size: 1.5em; font-weight: 600; }
+            .reveal h3 { font-size: 1.1em; font-weight: 400; color: var(--brand-cyan); text-transform: uppercase; letter-spacing: 2px;}
+            
+            .reveal p, .reveal li {
+                font-size: 0.8em;
+                line-height: 1.6;
+                color: var(--text-light);
+                font-weight: 300;
+            }
+            
+            .reveal ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            .reveal ul li {
+                position: relative;
+                padding-left: 25px;
+                margin-bottom: 15px;
+            }
+            .reveal ul li::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 12px;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: var(--brand-cyan);
+            }
+            
+            /* Logo Positioning */
+            .logo-header {
+                position: absolute;
+                top: 30px;
+                left: 30px;
+                z-index: 10;
+                width: 150px;
+            }
+            
+            /* Componentes Minimalistas */
+            .metric-box {
+                text-align: left;
+                padding: 20px;
+                border-left: 2px solid var(--brand-cyan);
+            }
+            .metric-box h2 {
+                font-size: 2.5em;
+                margin: 0;
+                color: var(--brand-navy);
+                font-weight: 600;
+            }
+            
+            .divider {
+                height: 1px;
+                background: var(--border-color);
+                margin: 40px 0;
+            }
+            
+            .flex-container {
+                display: flex;
+                justify-content: space-between;
+                gap: 40px;
+                margin-top: 40px;
+            }
+            .flex-item {
+                flex: 1;
+                text-align: left;
+            }
+            
+            .highlight {
+                color: var(--brand-navy);
+                font-weight: 600;
+            }
+            
+            /* Table minimalista */
+            .reveal table {
+                font-size: 0.65em;
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 30px;
+                color: var(--text-light);
+            }
+            .reveal table th {
+                color: var(--brand-cyan);
+                font-weight: 600;
+                padding: 15px 10px;
+                text-align: left;
+                border-bottom: 2px solid var(--brand-navy);
+                text-transform: uppercase;
+                font-size: 0.9em;
+            }
+            .reveal table td {
+                padding: 15px 10px;
+                border-bottom: 1px solid var(--border-color);
+            }
+            
+            /* Controles Reveal */
+            .reveal .controls, .reveal .progress {
+                color: var(--brand-cyan);
+            }
+
+            /* Responsividade para Mobile */
+            @media (max-width: 768px) {
+                .logo-header {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    margin: 0 auto 20px auto;
+                    display: block;
+                    width: 120px;
+                }
+                .reveal h1 { font-size: 1.6em; }
+                .reveal h2 { font-size: 1.2em; }
+                .reveal p, .reveal li { font-size: 0.7em; }
+                
+                .flex-container {
+                    flex-direction: column;
+                    gap: 20px;
+                    margin-top: 20px;
+                }
+                
+                .metric-box {
+                    padding: 10px 0 10px 15px;
+                }
+                .metric-box h2 { font-size: 1.8em; }
+                
+                .reveal table { font-size: 0.55em; }
+                
+                /* Ajuste de margens em telas menores */
+                .reveal .slides > section {
+                    padding: 10px;
+                }
+            }
+		</style>
+	</head>
+	<body>
+        <!-- Logo substituída pelo nome correto do arquivo -->
+        <img src="9A4A6A25-8AEE-43D7-A009-0E93FD412279.png" alt="DIAGMED" class="logo-header" onerror="this.style.display='none'">
+
+		<div class="reveal">
+			<div class="slides">
+
+                <!-- Capa -->
+				<section>
+                    <h3>Plano Estratégico</h3>
+                    <h1>Crescimento e Otimização<br>Google Ads</h1>
+                    <div class="divider" style="max-width: 100px; margin: 30px auto; background: var(--brand-cyan);"></div>
+                    <p style="margin-top: 20px;"><strong>Objetivo:</strong> Escalar agendamentos via WhatsApp, reduzir o Custo por Aquisição (CPA)<br> e dominar buscas locais nas regiões Centro e Clima Bom.</p>
+				</section>
+
+                <!-- Parte 1 - Histórico -->
+                <section>
+                    <h3>01. Inteligência de Dados</h3>
+                    <h2>O Que Já Funciona</h2>
+                    <p>A estratégia atual já se provou fundamental. Não descartaremos a inteligência gerada, vamos <span class="highlight">potencializá-la</span>.</p>
+                    
+                    <div class="flex-container">
+                        <div class="metric-box flex-item">
+                            <h2>4.716</h2>
+                            <p>Leads gerados no histórico de campanhas</p>
+                        </div>
+                        <div class="metric-box flex-item">
+                            <h2>2.402</h2>
+                            <p>Contatos diretos para o WhatsApp</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Padrão Ouro -->
+                <section>
+                    <h3>02. Benchmarking Interno</h3>
+                    <h2>O "Padrão Ouro" da Urologia</h2>
+                    <p>A campanha Raio Centro (Urologia) é nosso modelo ideal de eficiência para replicação.</p>
+                    
+                    <div class="flex-container">
+                        <div class="flex-item">
+                            <h2 style="color: var(--brand-cyan); margin:0;">10,83%</h2>
+                            <p>Taxa de Cliques (CTR) excelente, indicando altíssimo interesse.</p>
+                        </div>
+                        <div class="flex-item">
+                            <h2 style="color: var(--brand-cyan); margin:0;">R$ 5,04</h2>
+                            <p>Custo por Aquisição (CPA) extremamente baixo e rentável.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Intenção Hiperlocal -->
+                <section>
+                    <h3>03. Comportamento</h3>
+                    <h2>Intenção Hiperlocal</h2>
+                    <p>Os dados provam: o paciente da DIAGMED prioriza <strong>conveniência</strong> e <strong>proximidade</strong>.</p>
+                    <ul style="text-align: left; max-width: 80%; margin: 30px auto 0 auto;">
+                        <li><strong>Urgência Local:</strong> Buscas como <span class="highlight">"alergista perto de mim"</span> custaram apenas R$ 4,70/contato.</li>
+                        <li><strong>Alta Conversão:</strong> <span class="highlight">"alergologista mais próximo"</span> gerou CTR de até 66%, com cliques a centavos (R$ 0,69).</li>
+                    </ul>
+                </section>
+
+                <!-- Nova Arquitetura -->
+                <section>
+                    <h3>04. Nova Estratégia</h3>
+                    <h2>Arquitetura Geográfica</h2>
+                    <p>Fim do desperdício: divisão estrita de campanhas pela logística do paciente.</p>
+                    
+                    <div class="flex-container">
+                        <div class="flex-item" style="border-top: 1px solid var(--border-color); padding-top: 20px;">
+                            <h4 style="margin: 0; color: var(--brand-navy);">Unidade Centro</h4>
+                            <p>Foco no centro expandido. Captura quem trabalha/mora na região e busca praticidade.</p>
+                        </div>
+                        <div class="flex-item" style="border-top: 1px solid var(--border-color); padding-top: 20px;">
+                            <h4 style="margin: 0; color: var(--brand-navy);">Unidade Clima Bom</h4>
+                            <p>Foco na parte alta. Captura a população local para evitar o trânsito até o Centro.</p>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.6em; text-align: left; margin-top: 30px; color: var(--brand-cyan);">
+                        <strong>* Ajuste Técnico:</strong> +15% de lance para forçar anúncios no topo para raio < 5km da unidade.
+                    </p>
+                </section>
+
+                <!-- Blindagem -->
+                <section>
+                    <h3>05. Inteligência de Busca</h3>
+                    <h2>Foco em Alta Intenção</h2>
+                    
+                    <div style="text-align: left; margin-top: 30px;">
+                        <h4 style="margin-bottom: 10px;">Evolução de Palavras-Chave</h4>
+                        <p style="margin-top: 0;">Restrição para formatos de alta conversão (Exata e Frase).<br>Ex: <span class="highlight">"agendar exame rápido maceió"</span></p>
+                        
+                        <div class="divider"></div>
+                        
+                        <h4 style="margin-bottom: 10px;">Blindagem de Verba</h4>
+                        <p style="margin-top: 0;">R$ 0,00 será gasto com tráfego não-pagante.<br>Bloqueios: <span class="highlight">gratis, sus, upa, estagio, sintomas de</span></p>
+                    </div>
+                </section>
+
+                <!-- Experiência -->
+                <section>
+                    <h3>06. Conversão</h3>
+                    <h2>A Nova Experiência</h2>
+                    <p>Não enviaremos mais tráfego pago para a Home genérica do site.</p>
+                    
+                    <ul style="text-align: left; max-width: 80%; margin: 30px auto 0 auto;">
+                        <li><strong>Landing Pages Específicas:</strong> Criadas por unidade/especialidade.</li>
+                        <li><strong>Copywriting Sofisticado:</strong> Foco direto em <span class="highlight">"Agilidade / Sem Filas"</span>.</li>
+                        <li><strong>Rastreamento Avançado:</strong> Tag de Conversão no WhatsApp para identificar exatamente qual termo gerou o lucro.</li>
+                    </ul>
+                </section>
+
+                <!-- Projeções -->
+                <section>
+                    <h3>07. Cenários</h3>
+                    <h2>Projeções de Resultados</h2>
+                    
+                    <div class="flex-container">
+                        <div class="flex-item">
+                            <h4 style="color: var(--brand-cyan);">CPA Reduzido</h4>
+                            <p>Aproximação do sucesso da Urologia (R$ 5 a R$ 10) ao negativar buscas sem intenção de pagamento.</p>
+                        </div>
+                        <div class="flex-item">
+                            <h4 style="color: var(--brand-cyan);">Menos Atrito</h4>
+                            <p>Mostrar a unidade certa reduz drasticamente objeções de distância durante o atendimento.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Tabela de CPC -->
+                <section>
+                    <h3>08. Economia</h3>
+                    <h2>Estimativa de CPC Médio</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Palavra-Chave / Intenção</th>
+                                <th>CPC Estimado</th>
+                                <th>Justificativa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Institucional (Marca exata)</td>
+                                <td class="highlight">R$ 0,70 – R$ 1,20</td>
+                                <td>Custo de proteção baixo.</td>
+                            </tr>
+                            <tr>
+                                <td>Alta Urgência / Hiperlocal</td>
+                                <td class="highlight">R$ 0,69 – R$ 1,50</td>
+                                <td>Histórico validado (centavos).</td>
+                            </tr>
+                            <tr>
+                                <td>Exames / Especialidade Local</td>
+                                <td class="highlight">R$ 1,50 – R$ 3,00</td>
+                                <td>Fundo de funil, alta taxa de fechamento.</td>
+                            </tr>
+                            <tr>
+                                <td>Consultas Gerais (Média concorrência)</td>
+                                <td class="highlight">R$ 2,50 – R$ 4,50</td>
+                                <td>Termos de entrada na região.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- Orçamento -->
+                <section>
+                    <h3>09. Investimento</h3>
+                    <h2>Distribuição de Orçamento</h2>
+                    <p>Projeção para R$ 100/dia: <strong>~50 cliques qualificados.</strong></p>
+                    
+                    <div class="flex-container">
+                        <div class="flex-item metric-box" style="border-color: var(--brand-navy);">
+                            <h2 style="font-size: 1.8em;">60%</h2>
+                            <h4 style="margin: 10px 0;">Unidade Centro (R$ 60/dia)</h4>
+                            <p>Maior densidade comercial e histórico validado.</p>
+                        </div>
+                        <div class="flex-item metric-box" style="border-color: var(--brand-cyan);">
+                            <h2 style="font-size: 1.8em;">40%</h2>
+                            <h4 style="margin: 10px 0;">Unidade Clima Bom (R$ 40/dia)</h4>
+                            <p>Expansão estratégica (menor concorrência local).</p>
+                        </div>
+                    </div>
+                </section>
+
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+                controls: true,
+                progress: true,
+                center: true,
+                transition: 'fade', // Transição 'fade' para maior sofisticação
+                margin: 0.1, // Margem para melhor responsividade
+                
+                // Responsividade:
+                width: 1024,
+                height: 768,
+                minScale: 0.2,
+                maxScale: 2.0
+			});
+		</script>
+	</body>
+</html>
