@@ -147,33 +147,78 @@
             }
 
             /* Responsividade para Mobile */
+            .swipe-indicator { display: none; }
             @media (max-width: 768px) {
+                .swipe-indicator {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: fixed;
+                    bottom: 20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 9999;
+                    color: var(--brand-cyan);
+                    font-weight: 600;
+                    font-size: 0.9em;
+                    background: rgba(255, 255, 255, 0.95);
+                    padding: 8px 16px;
+                    border-radius: 20px;
+                    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+                    pointer-events: none;
+                }
+                .swipe-arrow {
+                    margin-left: 8px;
+                    font-size: 1.2em;
+                    animation: slide-right 1.5s infinite;
+                }
+                @keyframes slide-right {
+                    0%, 100% { transform: translateX(0); }
+                    50% { transform: translateX(8px); }
+                }
+
                 .logo-header {
                     position: relative;
                     top: 0;
                     left: 0;
                     margin: 0 auto 20px auto;
                     display: block;
-                    width: 120px;
+                    width: 140px;
                 }
-                .reveal h1 { font-size: 1.6em; }
-                .reveal h2 { font-size: 1.2em; }
-                .reveal p, .reveal li { font-size: 0.7em; }
+                
+                /* Textos Maiores e Centralizados */
+                .reveal h1 { font-size: 2.2em; text-align: center; }
+                .reveal h2 { font-size: 1.8em; text-align: center; }
+                .reveal h3 { font-size: 1.3em; text-align: center; }
+                .reveal p { font-size: 1em; text-align: center !important; }
+                
+                .reveal ul { 
+                    display: inline-block; 
+                    margin: 0 auto; 
+                }
+                .reveal ul li { 
+                    font-size: 1em; 
+                    text-align: left !important; 
+                }
                 
                 .flex-container {
                     flex-direction: column;
                     gap: 20px;
                     margin-top: 20px;
+                    text-align: center;
                 }
                 
-                .metric-box {
-                    padding: 10px 0 10px 15px;
+                .metric-box, .flex-item {
+                    padding: 15px;
+                    text-align: center !important;
+                    border-left: none !important;
+                    border-top: 2px solid var(--border-color);
                 }
-                .metric-box h2 { font-size: 1.8em; }
+                .metric-box h2 { font-size: 2.2em; text-align: center; }
                 
-                .reveal table { font-size: 0.55em; }
+                .reveal table { font-size: 0.85em; text-align: center; }
+                .reveal table th { text-align: center; }
                 
-                /* Ajuste de margens em telas menores */
                 .reveal .slides > section {
                     padding: 10px;
                 }
@@ -181,6 +226,12 @@
 		</style>
 	</head>
 	<body>
+        <!-- Indicador de arraste mobile -->
+        <div class="swipe-indicator">
+            <span class="swipe-text">Arraste para o lado</span>
+            <span class="swipe-arrow">→</span>
+        </div>
+
         <!-- Logo substituída pelo nome correto do arquivo -->
         <img src="9A4A6A25-8AEE-43D7-A009-0E93FD412279.png" alt="DIAGMED" class="logo-header" onerror="this.style.display='none'">
 
